@@ -1,3 +1,10 @@
+# 1.0.0 (2026-04-01)
+
+
+### Features
+
+* integrate Raindrop.io bookmarks with tag-based page matching ([d9b673a](https://github.com/shangjihao/logseq-raindrop/commit/d9b673a74642ba1e8ef458858be06acf0cdbd78d))
+
 ## [2.1.1](https://github.com/pengx17/logseq-plugin-template-react/compare/v2.1.0...v2.1.1) (2022-03-24)
 
 
