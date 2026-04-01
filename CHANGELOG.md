@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.1...v1.0.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* modify release config ([8101a09](https://github.com/shangjihao/logseq-raindrop/commit/8101a092a2fe16c9fe0a54aea117bca6806ba5ca))
+
 ## [1.0.1](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.0...v1.0.1) (2026-04-01)
 
 
