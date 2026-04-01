@@ -1,18 +1,48 @@
-# Logseq Plugin Template React 🚀
+# Logseq Raindrop
+
+A Logseq plugin that integrates with [Raindrop.io](https://raindrop.io) bookmarks. Sync your bookmarks locally and view them alongside your notes when page names match Raindrop tags
+
+![](assets/85e959b6b99de0c30818804b95d340b1656d67eb.gif)
+
+## Background
+
+i read many articles and watch many videos everyday, and i will save some of the impressive contents to my raindrop, take some notes, and tag them
+
+the tag names are the same as logseq page names, so when i am doing research on some topics, i can use these tags to search what i've read and watched
+
+i use this plugin to make this habit more convinient
+
+also i find there is someone sync every raindrop bookmark to one logseq page. i don't like this way, coz there will be so many pages
+
+## Background
 
 ## Features
 
-- Plug-and-play boilerplate with properly defined GitHub action defaults
-- Develop with HMR, empowered by lightning-fast Vite ⚡ with [vite-logseq-plugin](https://github.com/pengx17/vite-plugin-logseq)
-- TailwindCSS for styling
-- Pnpm
+- **Bookmark Sync** - Batch sync all Raindrop.io bookmarks to local storage via the Raindrop API
 
-## How to get started
-1. Clone the repository or use the button "Use this template" on GitHub to create your own version of the repository 🔨
-2. Make sure you have pnpm installed, [install](https://pnpm.io/installation) if necessary 🛠
-3. Execute `pnpm install` 📦
-4. Change the plugin-name in `package.json` to your liking. Adapt both the package-name and the plugin-id at the bottom of the `package.json`. Make sure that they are not conflicting with plugins you already installed. 📝
-5. Execute `pnpm build` to build the plugin 🚧
-6. Enable developer-mode in Logseq, go to plugins, select "Load unpacked plugin" 🔌
-7. Select the directory of your plugin (not the `/dist`-directory, but the directory which includes your package.json) 📂
-8. Enjoy! 🎉
+- **Auto Sync on Startup** - Optionally sync bookmarks automatically when Logseq launches (enabled by default, configurable in settings)
+
+- **Tag-based Page Matching** - When you navigate to a Logseq page, if the page name matches a Raindrop tag (case-insensitive), related bookmarks appear in a right-side panel
+
+- **Dual-column Layout** - The bookmark panel opens on the right side of the page, pushing the main content left so you can continue editing while viewing bookmarks
+
+- **Bookmark Cards** - Each bookmark displays title (clickable link), domain, collection name, saved date, and notes
+
+## Setup
+
+1. Get a **Test Token** from [Raindrop.io Integrations](https://app.raindrop.io/settings/integrations)
+2. Install the plugin in Logseq
+3. Go to plugin settings and paste your token into **Raindrop API Token**
+4. Click the toolbar button (bookmark icon) and hit **Sync Now**, or let it auto-sync on next startup
+
+## Development
+
+Requires [pnpm](https://pnpm.io/installation).
+
+```bash
+pnpm install
+pnpm dev      # Dev server with HMR
+pnpm build    # Production build (outputs to dist/)
+```
+
+To load in Logseq: enable developer mode, go to Plugins, select "Load unpacked plugin", and choose the project root directory
