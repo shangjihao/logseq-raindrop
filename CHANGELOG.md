@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.2...v1.0.3) (2026-04-01)
+
+
+### Bug Fixes
+
+* Add MIT License to the project ([8e45695](https://github.com/shangjihao/logseq-raindrop/commit/8e45695c8371d15ece0f4896638740c5216f0b4c))
+
 ## [1.0.2](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.1...v1.0.2) (2026-04-01)
 
 
