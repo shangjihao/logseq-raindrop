@@ -1,5 +1,5 @@
 module.exports = {
-  branches: ["master"],
+  branches: ["main"],
   plugins: [
     [
       "@semantic-release/commit-analyzer",
@@ -20,7 +20,7 @@ module.exports = {
       "@semantic-release/exec",
       {
         prepareCmd:
-          "zip -qq -r logseq-raindrop-${nextRelease.version}.zip dist readme.md logo.svg LICENSE package.json",
+          "zip -qq -r logseq-raindrop-${nextRelease.version}.zip dist README.md logo.svg LICENSE package.json",
       },
     ],
     [
