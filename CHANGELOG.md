@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.3...v1.1.0) (2026-09-03)
+
+
+### Bug Fixes
+
+* restore releases on main and pin build tooling ([10118b2](https://github.com/shangjihao/logseq-raindrop/commit/10118b2b8d7d512efd4836855a5e326b942bd01a))
+
+
+### Features
+
+* improve bookmark discovery and sidebar display ([d0acf53](https://github.com/shangjihao/logseq-raindrop/commit/d0acf53e4be2f8d3459077778307b375ef848851))
+
 ## [1.0.3](https://github.com/shangjihao/logseq-raindrop/compare/v1.0.2...v1.0.3) (2026-04-01)
 
 
