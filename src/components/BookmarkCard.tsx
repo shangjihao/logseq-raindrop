@@ -1,9 +1,29 @@
 import React from 'react';
+import ReactMarkdown, { Components } from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { LocalBookmark } from '../types';
 
 interface Props {
   bookmark: LocalBookmark;
 }
+
+const markdownComponents: Components = {
+  a: ({ href, title, children }) => (
+    <a
+      href={href}
+      title={title}
+      target={href?.startsWith('#') ? undefined : '_blank'}
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  ),
+  table: ({ children }) => (
+    <div className="raindrop-note-table">
+      <table>{children}</table>
+    </div>
+  ),
+};
 
 function BookmarkCard({ bookmark }: Props) {
   return (
@@ -26,10 +46,23 @@ function BookmarkCard({ bookmark }: Props) {
         </span>
       </div>
       {bookmark.note && (
-        <p className="raindrop-card-note">{bookmark.note}</p>
+        <div className="raindrop-card-note">
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents} skipHtml>
+            {bookmark.note}
+          </ReactMarkdown>
+        </div>
+      )}
+      {bookmark.tags?.length > 0 && (
+        <ul className="raindrop-card-tags" aria-label="Tags">
+          {bookmark.tags.map((tag, index) => (
+            <li className="raindrop-card-tag" key={`${tag}-${index}`}>
+              {tag}
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
 }
 
-export default BookmarkCard;
+export default React.memo(BookmarkCard);

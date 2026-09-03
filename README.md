@@ -22,11 +22,13 @@ also i find there is someone sync every raindrop bookmark to one logseq page. i 
 
 - **Auto Sync on Startup** - Optionally sync bookmarks automatically when Logseq launches (enabled by default, configurable in settings)
 
-- **Tag-based Page Matching** - When you navigate to a Logseq page, if the page name matches a Raindrop tag (case-insensitive), related bookmarks appear in a right-side panel
+- **Tag-based Page Matching** - When you navigate to a Logseq page, if the page name matches a Raindrop tag (case-insensitive), a related-bookmarks notice appears below the page title. Click it to open the right-side panel
 
 - **Dual-column Layout** - The bookmark panel opens on the right side of the page, pushing the main content left so you can continue editing while viewing bookmarks
 
-- **Bookmark Cards** - Each bookmark displays title (clickable link), domain, collection name, saved date, and notes
+- **Resizable Sidebar** - Drag the left edge of the bookmark panel to adjust its width. The plugin remembers your preferred width and keeps space available for the main page.
+
+- **Bookmark Cards** - Each bookmark displays title (clickable link), domain, collection name, saved date, and Markdown notes, including headings, lists, links, code blocks, tables, and task lists. All bookmark tags appear at the bottom of each card
 
 ## Setup
 

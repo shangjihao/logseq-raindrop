@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.raindrop-sync-dialog {
+  background: var(--ls-primary-background-color, #fff);
+  color: var(--ls-primary-text-color, #111827);
+  border: 1px solid var(--ls-border-color, #e5e7eb);
+  font-family: var(--ls-font-family, inherit);
+}
+
+.raindrop-text-secondary {
+  color: var(--ls-secondary-text-color, #6b7280);
+}
+
+.raindrop-text-accent {
+  color: var(--ls-link-text-color, #2563eb);
+}
+
+.raindrop-text-error {
+  color: var(--ls-error-text-color, #ef4444);
+}
+
+.raindrop-sync-button {
+  background: var(--ls-secondary-background-color, #f3f4f6);
+  color: var(--ls-link-text-color, #2563eb);
+  border: 1px solid var(--ls-border-color, #e5e7eb);
+}
+
+.raindrop-sync-button:hover:not(:disabled) {
+  background: var(--ls-tertiary-background-color, #e5e7eb);
+  color: var(--ls-link-text-hover-color, var(--ls-link-text-color, #2563eb));
+}
+
+.raindrop-sync-button:focus-visible {
+  outline: 2px solid var(--ls-link-text-color, #2563eb);
+  outline-offset: 2px;
+}

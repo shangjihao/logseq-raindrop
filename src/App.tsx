@@ -51,7 +51,7 @@ function App() {
     >
       <div
         ref={innerRef}
-        className="bg-white rounded-xl shadow-lg w-full max-w-md"
+        className="raindrop-sync-dialog rounded-xl shadow-lg w-full max-w-md"
       >
         <SyncPanel
           onSync={handleSync}

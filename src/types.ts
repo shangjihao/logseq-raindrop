@@ -39,6 +39,7 @@ export interface SyncData {
 export interface PluginSettings {
   apiToken: string;
   autoSync: boolean;
+  sidebarWidth?: number;
   syncData: SyncData;
 }
 
